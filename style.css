@@ -1065,4 +1065,9 @@ body {
     .notification-amount {
         font-size: 1.5rem;
     }
-} 
+}
+
+.contact-form {
+    position: relative;
+    z-index: 2;
+}

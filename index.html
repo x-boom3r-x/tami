@@ -3,57 +3,469 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agence de Marketing Digital</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TANNI - Croissez plus vite avec notre plateforme marketing tout-en-un</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#" class="logo">Tami</a>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="TANNI Logo" style="height: 70px; width: auto;">
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">ACCUEIL</a>
+                <a href="#services" class="nav-link">SERVICES</a>
+                <a href="#blog" class="nav-link">BLOG</a>
+                <a href="#about" class="nav-link">À PROPOS</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button class="btn-login">CONNEXION</button>
+                <button class="btn-get-started">
+                    COMMENCER
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </header>
-    <main>
-        <section id="hero">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Lignes courbes en arrière-plan -->
+        <div class="curve-line"></div>
+        <div class="curve-line"></div>
+        
+        <div class="hero-visual-background">
+            <iframe src='https://my.spline.design/interactiveworkplace-w80SEjqEmMpHffU6155PB3l4/' frameborder='0' width='100%' height='100%'></iframe>
+        </div>
+        <div class="hero-container">
             <div class="hero-content">
-                <h1>Votre partenaire pour une croissance digitale explosive</h1>
-                <p>Nous aidons les entreprises à atteindre leurs objectifs grâce à des stratégies de marketing digital sur mesure.</p>
-                <a href="#contact" class="cta">Contactez-nous</a>
-            </div>
-            <div class="hero-3d">
-                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.38/build/spline-viewer.js"></script>
-                <spline-viewer url="https://prod.spline.design/your-scene-url/scene.splinecode"></spline-viewer>
-            </div>
-        </section>
-        <section id="services">
-            <h2>Nos Services</h2>
-            <div class="services-container">
-                <div class="service-card">
-                    <h3>Stratégie de Contenu</h3>
-                    <p>Création de contenu engageant pour attirer et convertir votre audience.</p>
+                <div class="hero-badge">
+                    NOUS POUVONS VOUS AIDER
                 </div>
-                <div class="service-card">
-                    <h3>SEO & SEA</h3>
-                    <p>Optimisation pour les moteurs de recherche et campagnes publicitaires payantes.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Marketing sur les Réseaux Sociaux</h3>
-                    <p>Gestion de vos comptes et campagnes sur les réseaux sociaux.</p>
+                
+                <h1 class="hero-title">
+                    Croissez <span class="highlight">plus vite</span> avec notre plateforme marketing tout-en-un
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Nous ne sommes pas votre designer web moyen—nos services ont un impact sérieux. Nous sommes une agence digitale pour des sites web qui atteignent leurs objectifs.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn-primary">
+                        COMMENCER
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-secondary">
+                        EN SAVOIR PLUS
+                    </button>
                 </div>
             </div>
-        </section>
-        <section id="contact">
-            <h2>Contactez-nous</h2>
-            <form>
-                <input type="text" name="name" placeholder="Votre nom" required>
-                <input type="email" name="email" placeholder="Votre email" required>
-                <textarea name="message" placeholder="Votre message" required></textarea>
-                <button type="submit" class="cta">Envoyer</button>
-            </form>
-        </section>
-    </main>
+        </div>
+    </section>
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Services</h2>
+                <p>Des solutions complètes pour accélérer la croissance de votre entreprise</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Design Web</h3>
+                    <p>Des sites web magnifiques et responsifs qui convertissent les visiteurs en clients. Notre équipe de designers crée des expériences utilisateur exceptionnelles.</p>
+                    <ul style="text-align: left; margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Design personnalisé</li>
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Responsive design</li>
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Optimisation UX/UI</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Marketing Digital</h3>
+                    <p>Des campagnes marketing stratégiques qui génèrent des résultats et améliorent le ROI. Nous utilisons les dernières techniques pour maximiser votre visibilité.</p>
+                    <ul style="text-align: left; margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Campagnes ciblées</li>
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Analyse des performances</li>
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Optimisation continue</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Optimisation SEO</h3>
+                    <p>Améliorez votre classement dans les moteurs de recherche et augmentez le trafic organique. Notre expertise SEO vous aide à dominer les résultats de recherche.</p>
+                    <ul style="text-align: left; margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Audit SEO complet</li>
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Optimisation on-page</li>
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Stratégie de contenu</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Réseaux Sociaux</h3>
+                    <p>Engagez votre audience et construisez la notoriété de votre marque sur toutes les plateformes. Nous créons du contenu qui résonne avec votre public.</p>
+                    <ul style="text-align: left; margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Gestion des réseaux</li>
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Création de contenu</li>
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Community management</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Applications Mobiles</h3>
+                    <p>Développez votre présence mobile avec des applications natives et hybrides. Nous créons des expériences mobiles exceptionnelles pour vos utilisateurs.</p>
+                    <ul style="text-align: left; margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> iOS et Android</li>
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Design natif</li>
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Maintenance continue</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Développement Web</h3>
+                    <p>Solutions web personnalisées adaptées à vos besoins spécifiques. Nous développons des applications web robustes et évolutives.</p>
+                    <ul style="text-align: left; margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Développement sur mesure</li>
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Technologies modernes</li>
+                        <li><i class="fas fa-check" style="color: var(--mint-green);"></i> Support technique</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="pricing" style="background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Processus</h2>
+                <p>Comment nous travaillons pour vous</p>
+            </div>
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div class="service-card" style="text-align: center;">
+                    <div class="service-icon" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>1. Découverte</h3>
+                    <p>Nous analysons vos besoins, objectifs et votre marché pour créer une stratégie personnalisée.</p>
+                </div>
+                <div class="service-card" style="text-align: center;">
+                    <div class="service-icon" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>2. Conception</h3>
+                    <p>Notre équipe crée des maquettes et prototypes pour valider la direction créative.</p>
+                </div>
+                <div class="service-card" style="text-align: center;">
+                    <div class="service-icon" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>3. Développement</h3>
+                    <p>Nous développons votre projet avec les meilleures pratiques et technologies.</p>
+                </div>
+                <div class="service-card" style="text-align: center;">
+                    <div class="service-icon" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>4. Lancement</h3>
+                    <p>Nous lançons votre projet et assurons un suivi continu pour optimiser les performances.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content" style="grid-template-columns: 1fr; text-align: center;">
+                <div class="about-text">
+                    <h2>À Propos de Starship</h2>
+                    <p>Fondée en 2012, Starship est née de la vision simple que chaque entreprise mérite une présence digitale exceptionnelle. Ce qui a commencé comme une petite équipe de passionnés est devenu une agence digitale reconnue, au service de plus de 5,6 millions d'utilisateurs dans le monde.</p>
+                    <p>Nous croyons que le succès digital ne se résume pas à créer de beaux sites web, mais à construire des expériences qui génèrent de vrais résultats business. Notre approche combine créativité, technologie et stratégie pour créer des solutions qui font la différence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="services" style="background: var(--off-white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Valeurs</h2>
+                <p>Les principes qui guident notre travail</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Passion</h3>
+                    <p>Nous mettons notre passion au service de votre succès. Chaque projet est une opportunité de créer quelque chose d'extraordinaire.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Nous restons à la pointe de la technologie et des tendances pour vous offrir des solutions toujours plus performantes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Transparence</h3>
+                    <p>Nous croyons en la transparence totale dans nos relations clients et dans nos processus de travail.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-target"></i>
+                    </div>
+                    <h3>Résultats</h3>
+                    <p>Notre objectif est simple : générer des résultats mesurables qui contribuent à la croissance de votre entreprise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="pricing" style="background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Équipe</h2>
+                <p>Les experts qui font de Starship une agence d'exception</p>
+            </div>
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <div class="service-card" style="text-align: center;">
+                    <div class="service-icon" style="width: 100px; height: 100px; font-size: 2.5rem;">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Thomas Dubois</h3>
+                    <p style="color: var(--mint-green); font-weight: 600; margin-bottom: 1rem;">CEO & Fondateur</p>
+                    <p>Visionnaire et entrepreneur passionné, Thomas a fondé Starship avec la conviction que le digital peut transformer n'importe quelle entreprise.</p>
+                </div>
+                <div class="service-card" style="text-align: center;">
+                    <div class="service-icon" style="width: 100px; height: 100px; font-size: 2.5rem;">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Sophie Martin</h3>
+                    <p style="color: var(--mint-green); font-weight: 600; margin-bottom: 1rem;">Directrice Créative</p>
+                    <p>Designer talentueuse avec plus de 10 ans d'expérience, Sophie transforme les idées en expériences visuelles exceptionnelles.</p>
+                </div>
+                <div class="service-card" style="text-align: center;">
+                    <div class="service-icon" style="width: 100px; height: 100px; font-size: 2.5rem;">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Marc Leroy</h3>
+                    <p style="color: var(--mint-green); font-weight: 600; margin-bottom: 1rem;">CTO</p>
+                    <p>Expert technique passionné par les nouvelles technologies, Marc assure que nos solutions restent à la pointe de l'innovation.</p>
+                </div>
+                <div class="service-card" style="text-align: center;">
+                    <div class="service-icon" style="width: 100px; height: 100px; font-size: 2.5rem;">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Emma Bernard</h3>
+                    <p style="color: var(--mint-green); font-weight: 600; margin-bottom: 1rem;">Directrice Marketing</p>
+                    <p>Stratège marketing expérimentée, Emma développe des campagnes qui génèrent des résultats concrets pour nos clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Derniers Articles</h2>
+                <p>Restez à jour avec les dernières tendances et conseils</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Marketing Digital">
+                    </div>
+                    <div class="blog-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; font-size: 0.9rem; color: var(--medium-gray);">
+                            <span><i class="fas fa-calendar"></i> 15 Mars 2024</span>
+                            <span><i class="fas fa-user"></i> Par Emma Bernard</span>
+                        </div>
+                        <h3>10 Façons d'Améliorer Votre Marketing Digital en 2024</h3>
+                        <p>Découvrez les stratégies les plus efficaces pour booster votre présence en ligne et générer plus de conversions cette année.</p>
+                        <a href="#" class="blog-link">Lire Plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="SEO">
+                    </div>
+                    <div class="blog-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; font-size: 0.9rem; color: var(--medium-gray);">
+                            <span><i class="fas fa-calendar"></i> 12 Mars 2024</span>
+                            <span><i class="fas fa-user"></i> Par Marc Leroy</span>
+                        </div>
+                        <h3>Tendances SEO pour 2024 : Ce Qui Va Changer</h3>
+                        <p>Restez en avance sur la concurrence avec ces techniques SEO émergentes et bonnes pratiques qui dominent cette année.</p>
+                        <a href="#" class="blog-link">Lire Plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Design Web">
+                    </div>
+                    <div class="blog-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; font-size: 0.9rem; color: var(--medium-gray);">
+                            <span><i class="fas fa-calendar"></i> 10 Mars 2024</span>
+                            <span><i class="fas fa-user"></i> Par Sophie Martin</span>
+                        </div>
+                        <h3>Principes de Design pour une Meilleure UX</h3>
+                        <p>Apprenez à créer des expériences utilisateur qui enchantent et convertissent vos visiteurs avec ces principes fondamentaux.</p>
+                        <a href="#" class="blog-link">Lire Plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="services" style="background: var(--off-white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Réservez un Appel</h2>
+                <p>Discutons de vos projets et découvrez comment nous pouvons vous aider</p>
+            </div>
+            <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <form style="display: grid; gap: 1.5rem; margin-bottom: 1rem;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <input type="text" placeholder="Prénom" required style="padding: 1rem; border: 2px solid var(--extreme-light-gray); border-radius: 50px; font-size: 1rem; outline: none; background: white;">
+                        <input type="text" placeholder="Nom" required style="padding: 1rem; border: 2px solid var(--extreme-light-gray); border-radius: 50px; font-size: 1rem; outline: none; background: white;">
+                    </div>
+                    <input type="email" placeholder="Votre adresse email" required style="padding: 1rem; border: 2px solid var(--extreme-light-gray); border-radius: 50px; font-size: 1rem; outline: none; background: white;">
+                    <input type="tel" placeholder="Téléphone" style="padding: 1rem; border: 2px solid var(--extreme-light-gray); border-radius: 50px; font-size: 1rem; outline: none; background: white;">
+                    <select style="padding: 1rem; border: 2px solid var(--extreme-light-gray); border-radius: 50px; font-size: 1rem; outline: none; background: white; cursor: pointer;">
+                        <option value="">Sélectionnez un service</option>
+                        <option value="design">Design Web</option>
+                        <option value="marketing">Marketing Digital</option>
+                        <option value="seo">Optimisation SEO</option>
+                        <option value="social">Réseaux Sociaux</option>
+                        <option value="mobile">Applications Mobiles</option>
+                        <option value="development">Développement Web</option>
+                    </select>
+                    <textarea placeholder="Décrivez votre projet (optionnel)" rows="4" style="padding: 1rem; border: 2px solid var(--extreme-light-gray); border-radius: 20px; font-size: 1rem; outline: none; background: white; resize: vertical; font-family: inherit;"></textarea>
+                    <button type="submit" class="btn-primary" style="min-width: auto;">
+                        RÉSERVER UN APPEL
+                        <i class="fas fa-calendar-check"></i>
+                    </button>
+                </form>
+                <p style="font-size: 0.9rem; color: var(--medium-gray);">Nous vous recontacterons dans les 24h pour confirmer votre rendez-vous.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à Croître Plus Vite ?</h2>
+                <p>Rejoignez des milliers d'entreprises qui font confiance à Starship pour accélérer leur croissance digitale.</p>
+                <button class="btn-primary">
+                    COMMENCER AUJOURD'HUI
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                                    <div class="footer-logo">
+                    <img src="logo.png" alt="TANNI Logo" style="height: 70px; width: auto;">
+                </div>
+                    <p>Croissez plus vite avec notre plateforme marketing tout-en-un conçue pour accélérer le succès de votre entreprise.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Design Web</a></li>
+                        <li><a href="#services">Marketing Digital</a></li>
+                        <li><a href="#services">Optimisation SEO</a></li>
+                        <li><a href="#services">Réseaux Sociaux</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#about">Notre Équipe</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Centre d'Aide</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Référence API</a></li>
+                        <li><a href="#">Statut</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Starship. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#">Politique de Confidentialité</a>
+                    <a href="#">Conditions d'Utilisation</a>
+                    <a href="#">Politique des Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 

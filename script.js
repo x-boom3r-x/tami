@@ -111,14 +111,14 @@ document.querySelectorAll('.stat-number').forEach(counter => {
 });
 
 // Effet de parallaxe pour la section hero
-window.addEventListener('scroll', () => {
+/* window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
     if (hero) {
         const rate = scrolled * -0.5;
         hero.style.transform = `translateY(${rate}px)`;
     }
-});
+}); */
 
 // Animation des cartes au hover
 document.querySelectorAll('.service-card, .pricing-card, .blog-card').forEach(card => {
@@ -378,7 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Gestion des erreurs de chargement d'images
 document.querySelectorAll('img').forEach(img => {
     img.addEventListener('error', function() {
-        this.src = 'https://via.placeholder.com/400x300/4ECDC4/2a2a2a?text=Starship';
+        this.src = 'https://via.placeholder.com/400x300/4ECDC4/2a2a2a?text=TANNI';
     });
 });
 
